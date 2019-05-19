@@ -1,0 +1,67 @@
+.center {
+	text-align: center;
+}
+
+body {
+	text-align: center;
+	border-radius: 40px;
+	/*background-color: #cccccc;*/
+	background: linear-gradient(to right, pink, white, pink);
+}
+
+button {
+	text-align: center;
+	background: green;
+	background-color: #4CAF50;
+	color: #ffffff;
+	font-size: 16px;
+	white-space: normal;
+	padding: 8px 16px;
+	/* 边框 */
+	border: none;
+	border-color: #4CAF50;
+	/* 设置半径 */
+	border-radius: 20px;
+	/* 无外线 */
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer; /* 小手 */
+	background-color: pink; /* 粉红 */
+}
+
+h1 h2 h3 {
+	text-shadow: green;
+}
+
+.submit {
+	cursor: pointer;
+	background: linear-gradient(to right, pink, white, pink);
+	border: none;
+	padding: 10px 20px;
+	border: none;
+	background: linear-gradient(to right, pink, white, pink);
+}
+
+/*
+随着输入判断格式与样式
+作为用户，我们当然想在得知我输入了错误的格式之后，文本框变红（或者有别的提示）。而在我每次输入一个字符，如果对了，文本框就恢复正常。我们可以使用CSS伪类来实现这个功能：
+*/
+input {
+	height: 24px;
+}
+
+input:required {
+	background-color: pink;
+}
+
+/*这个伪类通过validationMessage属性进行判断*/
+input:invalid {
+	border: 2px solid pink;
+	border: none;
+}
+
+a {
+	color: green;
+}
